@@ -1,0 +1,30 @@
+package collections;
+import java.util.*;
+import java.util.List;
+
+public class listDemo {
+
+
+	   public static void main(String[] args) {
+		   
+		   
+	      //create the list
+		  List myList = new ArrayList();
+		  
+		   //this is how you add
+	      myList.add("Tiva");
+	      myList.add("Bill");
+	      myList.add("Paseni");
+	      
+	      //This is to print the list
+	      System.out.print(myList);
+	      
+	      //Let's remove bill
+	      //remember index starts with 0 as first
+	      myList.remove(1);
+	      
+	      //Let's see if Bill got removed
+	      System.out.print(myList);
+	     
+	   }
+	}
