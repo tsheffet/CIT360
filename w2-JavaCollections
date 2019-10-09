@@ -1,0 +1,99 @@
+package collections;
+import java.util.*;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class listDemo {
+
+
+	   public static void main(String[] args) {
+		   
+		   System.out.println("1.List:");
+	      //create the list
+		  List myList = new ArrayList();
+		  
+		   //this is how you add
+	      myList.add("Tiva");
+	      myList.add("Bill");
+	      myList.add("Paseni");
+	      
+	      //This is to print the list
+	      System.out.println(myList);
+	      
+	      //Let's remove bill
+	      //remember index starts with 0 as first
+	      myList.remove(1);
+	      
+	      //Let's see if Bill got removed
+	      System.out.println(myList);
+	      
+	      
+	      
+	      /* 
+	       * Now I will utilize the MAP & HASHMAP
+	       */
+	      System.out.println("2.Map:");
+	      Map<Integer, String> R = new HashMap<>();
+	      //assign the keys & values
+	      R.put(1, "Tiva");
+	      R.put(2, "Bill");
+	      R.put(3, "Paseni");
+	      
+	      //Let's print out the names by getting the keys
+	      System.out.println(R.get(1));
+	      System.out.println(R.get(2));
+	      System.out.println(R.get(3));
+	      
+	      
+	      /*
+	       * Now I will utilize 'Set'
+	       */
+	      System.out.println("3.Set:");
+	      
+	      Set<String> set1 = new HashSet<>();
+	      
+	      set1.add("Tiva");
+	      set1.add("Bill");
+	      set1.add("Paseni");
+	      
+	      
+	      System.out.println(set1);
+	      
+	      
+	      /*
+	       * Now I will utilize 'Queue'
+	       */
+	      System.out.println("4.Queue:");
+	      
+	      PriorityQueue<String> newQueue = new PriorityQueue<String>();
+	      
+	      //offer is how you add to the collection
+	      newQueue.offer("Tiva");
+	      newQueue.offer("Bill");
+	      newQueue.offer("Paseni");
+	      
+	      System.out.println(newQueue);
+	     
+	      
+	      /*
+	       * Last is tree
+	       */
+	      
+	      System.out.println("5.Tree:");
+	      TreeSet X = new TreeSet();
+	      
+	      X.add("Tiva");
+	      X.add("Bill");
+	      X.add("Paseni");
+	    	      
+	      //this will display alphabetically
+	      
+	      System.out.println(X);
+	      
+	      
+	   }
+	}
