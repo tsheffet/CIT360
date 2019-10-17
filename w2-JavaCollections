@@ -43,10 +43,17 @@ public class listDemo {
 	      R.put(2, "Bill");
 	      R.put(3, "Paseni");
 	      
-	      //Let's print out the names by getting the keys
-	      System.out.println(R.get(1));
-	      System.out.println(R.get(2));
-	      System.out.println(R.get(3));
+	      //Let's utilize iterator & a while loop
+	      
+	      Iterator<Integer> ikey = R.keySet().iterator();
+	      
+	      while (ikey.hasNext()) {
+	    	  Integer key = ikey.next();
+	    	  String value = R.get(key);
+	    	  System.out.println(key + " is: " + value);
+	      }
+	    	  
+	      
 	      
 	      
 	      /*
@@ -89,7 +96,7 @@ public class listDemo {
 	      X.add("Tiva");
 	      X.add("Bill");
 	      X.add("Paseni");
-	    	      
+	     
 	      //this will display alphabetically
 	      
 	      System.out.println(X);
