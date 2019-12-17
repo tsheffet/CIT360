@@ -28,7 +28,7 @@ public class Connect {
           inputStream.close();
             
         } catch(MalformedURLException e) {
-            System.out.println("Bad URL: " + e.getMessage());
+            System.out.println("Doesn't work: " + e.getMessage());
         } catch (IOException e) {
             System.out.println("IOException: " + e.getMessage());
         }
