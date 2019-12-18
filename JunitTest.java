@@ -12,6 +12,9 @@ public class MathTest {
   				
         assertEquals(1, result);
         
+        //This was the last thing needed for basic
+        assertArrayEquals(20, result);
+       
             
         assertTrue (10 <= result);
 
