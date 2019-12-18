@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Student Info</h1>
+	<p id="demo"></p>
+	
+	<script type="text/javascript">
+		var txt = '{"name" : "Tiva" , "age" : "26" , "student" : "Yes"}';
+		var parsedtxt = JSON.parse(txt);
+		document.getElementByID('demo').innerHTML = parsedtxt.name + "," + parsedtxt.age + "," + parsetxt.student;
+		
+		var student = {
+			name: 'Tiva' ,
+			age: '26' ,
+			student: 'Yes'
+		};
+		
+		var stringifytxt = JSON.stringify(student);
+		document.getElementById('demo').innerHTML += stringifytxt;
+		
+		</script>
+	</body>
+	</html>
+
+	
