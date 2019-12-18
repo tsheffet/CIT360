@@ -1,0 +1,23 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+ 
+public class JunitArrayDemo {
+ 
+    @Test
+    public void myTestMethod(){
+        /**
+         * we are demonstrating the usage of assertArrayEquals()
+         * The 1st array will list my siblings & I, and the second 
+         * will do the same. 
+         * assertArrayEquals() will compare the two arrays. IF it matches,
+         * I'm good, if not an error will appear.
+         */
+        String[] First = {"Tiva", "Seni", "Bill"};
+        
+        String[] Second = {"Tiva", "Seni", "Bill"};
+        
+        assertArrayEquals(First, Second);
+        
+        
+    }
+}
