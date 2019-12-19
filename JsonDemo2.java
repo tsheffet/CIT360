@@ -25,10 +25,8 @@ public class JsonDemo2 {
 		JSONObject root = new JSONObect();
 		
 		root.put("name", name);
-
-		JSONObject info = new JSONObect();
-		info.put("age", age);
-		info.put("student", student);
+		root.put("age", age);
+		root.put("student", student);
 		
 		System.out.println(root.toJSONString());
 		
